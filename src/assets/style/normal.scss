@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-size: 14px;
+    // background-color: rgba(12, 8, 24, 0.904);
+    background-color: rgba(129, 111, 182, 0.904);
 }
 * {
     box-sizing: border-box;
@@ -32,7 +34,30 @@ span, output {
 
 
 
+/* --------- */
+/*Scrollbar   */
+/* --------- */
 
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2d1950;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(178, 121, 216, 0.959);
+    border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(222, 130, 235, 0.911);
+    border-radius: 12px;
+}
 
 
 

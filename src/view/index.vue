@@ -7,19 +7,29 @@ const count = ref(0)
 </script>
 
 <template>
+<el-scrollbar>
   <div class="common-layout">
       <Header />
       <Left-link />
-     <Main-container />
-        <button type="button" @click="count++">count is: {{ count }}</button>
+      <Main-container />
+      
+      
+        <!-- <button type="button" @click="count++">count is: {{ count }}</button> -->
 
   </div>
+ </el-scrollbar>
 </template>
 
 <style lang="scss" scoped>
 // .test{
-//   color: $test-color;
+//   color: $test-color;      
 // }
+
+// .common-layout {
+//   width: 100%;
+//   height: 100%;
+// }
+
 
 code {
   background-color: #eee;

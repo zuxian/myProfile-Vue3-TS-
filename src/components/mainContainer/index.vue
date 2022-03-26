@@ -1,26 +1,30 @@
+<script setup lang="ts">
+import Home from '@/view/home/index.vue'
+import About from '@/view/about/index.vue'
+import Project from '@/view/project/index.vue'
+import Life from '@/view/life/index.vue'
+</script>
+
+
 <template>
   <div class="main-container" mode="horizontal">
-    <el-main>
-        <el-button type="primary">element-plus按钮</el-button>
-
-        <p class="test"> Edit
-          <code>components/Home.vue</code> to test hot module replacement.
-        </p>
-        <p v-for="item in 100" :key="item" class="scrollbar-demo-item">{{ item }}</p>
-    </el-main>
-  
+    <!-- <router-view> -->
+      <Home />
+      <About />
+      <Project />
+      <Life />
+    <!-- </router-view> -->
   </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
-
 <style lang="scss" scoped>
 .main-container {
-    padding: 0px 150px;
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+  padding: 0px 150px 0px 150px;
 
-   background-color: $main-background-color;
+  // background-color: $main-background-color;
 
 }
 </style>
