@@ -76,6 +76,20 @@
       "unicode_decimal": 58942
     },
     {
+      "icon_id": "1319372",
+      "name": "睡觉",
+      "font_class": "shuijue",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "2800307",
+      "name": "吃饭",
+      "font_class": "chifan",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
       "icon_id": "3186909",
       "name": "投简历",
       "font_class": "toujianli",
@@ -90,11 +104,25 @@
       "unicode_decimal": 58904
     },
     {
+      "icon_id": "3861064",
+      "name": "开发",
+      "font_class": "kaifa",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "3896042",
+      "name": "狗狗",
+      "font_class": "gougou",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
       "icon_id": "4236658",
       "name": "主项目",
       "font_class": "zhuxiangmu",
-      "unicode": "e619",
-      "unicode_decimal": 58905
+      "unicode": "e61b",
+      "unicode_decimal": 58907
     },
     {
       "icon_id": "4552970",
@@ -102,6 +130,97 @@
       "font_class": "youxiang",
       "unicode": "e908",
       "unicode_decimal": 59656
+    },
+    {
+      "icon_id": "5161152",
+      "name": "吃饭",
+      "font_class": "icon-test",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "5182369",
+      "name": "集群运维",
+      "font_class": "icon-test1",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "5194272",
+      "name": "狗狗",
+      "font_class": "gougou1",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "5219488",
+      "name": "睡觉(女)",
+      "font_class": "shuijuenv",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "5220054",
+      "name": "狗",
+      "font_class": "gou",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "5483283",
+      "name": "开心",
+      "font_class": "kaixin",
+      "unicode": "e6c7",
+      "unicode_decimal": 59079
+    },
+    {
+      "icon_id": "5483292",
+      "name": "睡觉",
+      "font_class": "shuijue1",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "5950470",
+      "name": "icon-rgb_机器学习算法引擎",
+      "font_class": "icon-rgb_jiqixuexisuanfayinqing",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    },
+    {
+      "icon_id": "5958394",
+      "name": "Image 图像识别",
+      "font_class": "Image",
+      "unicode": "e8c6",
+      "unicode_decimal": 59590
+    },
+    {
+      "icon_id": "6913571",
+      "name": "系统管理",
+      "font_class": "xitongguanli",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "7219134",
+      "name": "笑脸",
+      "font_class": "xiaolian",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "7732890",
+      "name": "开心果",
+      "font_class": "kaixinguo",
+      "unicode": "e6d3",
+      "unicode_decimal": 59091
+    },
+    {
+      "icon_id": "8931860",
+      "name": "系统设置",
+      "font_class": "xitongshezhi",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
     },
     {
       "icon_id": "9785618",
@@ -118,11 +237,53 @@
       "unicode_decimal": 58937
     },
     {
+      "icon_id": "13533452",
+      "name": "Image 图像识别",
+      "font_class": "Imagetuxiangshibie",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "13592808",
+      "name": "Image 图像识别",
+      "font_class": "Imagetuxiangshibie1",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "18164738",
+      "name": "分叉,大数据,数据结构,关系,关系分析,关系网,组织",
+      "font_class": "relation",
+      "unicode": "e867",
+      "unicode_decimal": 59495
+    },
+    {
       "icon_id": "23563216",
       "name": "PROJECT",
       "font_class": "PROJECT",
       "unicode": "ea42",
       "unicode_decimal": 59970
+    },
+    {
+      "icon_id": "26344621",
+      "name": "深度学习_分类_rnn分类",
+      "font_class": "shenduxuexi_fenlei_rnnfenlei",
+      "unicode": "f22f",
+      "unicode_decimal": 61999
+    },
+    {
+      "icon_id": "27196339",
+      "name": "机器人",
+      "font_class": "Robot-bad",
+      "unicode": "e898",
+      "unicode_decimal": 59544
+    },
+    {
+      "icon_id": "27253677",
+      "name": "系统运维",
+      "font_class": "xitongyunwei",
+      "unicode": "e613",
+      "unicode_decimal": 58899
     }
   ]
 }

@@ -11,24 +11,58 @@
     }
 }
 
-
-.el-tabs__active-bar {
-    background-color: $imp-text-color;
+/*    */
+.el-timeline {
+    font-size: $normal-font-size;
 }
 
-.el-tabs__item {
-    color:  white;
+.el-timeline-item__wrapper{
+    padding-left: 40px
+}
 
-    &:hover{
-        color: $imp-text-color;
-    }
+.el-timeline-item__content {
+    color: $white-text-color;
+}
 
-    &.is-active {
-        background-color: $tab-hover-background-color;
-        color: $imp-text-color;
-    }
+.el-timeline-item__timestamp {
+    font-size: 14px;
 }
 
 
+// .el-card {
+//     height: 50px;
+//     background-color: $tab-hover-background-color;
+//     color: $white-text-color;
+//     border: 1px solid $imp-text-color;
+//     padding: 10px;
+// }
+// .el-card__body {
+    
+// }
+
+.el-row {
+    margin-bottom: 25px;
+}
+
+
+
+// .el-tabs__active-bar {
+//     background-color: $imp-text-color;
+// }
+
+// .el-tabs__item {
+//     color:  white;
+//     height: 50px;
+//     line-height: 50px;
+ 
+//     &:hover{
+//         color: $imp-text-color;
+//     }
+
+//     &.is-active {
+//         background-color: $tab-hover-background-color;
+//         color: $imp-text-color;
+//     }
+// }
 
 
