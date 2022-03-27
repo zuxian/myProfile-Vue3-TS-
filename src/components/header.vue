@@ -5,17 +5,25 @@
         <router-link to="/">fuzuxian</router-link>
       </div>
       <div class="header-tab">
-        <div class="header-tab-item" @click="handleClick('home')">
-          <span class="iconfont icon-zhuye"></span>home
+        <div :class="[activeName==='home' ? 'active-color' : '', 'header-tab-item', 'header-tab-item-hover']" @click="handleClick('home')">
+          <span class="tab-item-content">
+            <span class="iconfont icon-zhuye"></span>home
+          </span>
         </div>
-        <div class="header-tab-item" @click="handleClick('about')">
-          <span class="iconfont icon-207yonghu_yonghunv"></span>about
+        <div :class="[activeName==='about' ? 'active-color' : '', 'header-tab-item', 'header-tab-item-hover']" @click="handleClick('about')">
+          <span class="tab-item-content">
+            <span class="iconfont icon-207yonghu_yonghunv"></span>about
+          </span>
         </div>
-        <div class="header-tab-item" @click="handleClick('project')">
-          <span class="iconfont icon-xiangmu"></span>project
+        <div :class="[activeName==='project' ? 'active-color' : '', 'header-tab-item', 'header-tab-item-hover']" @click="handleClick('project')">
+          <span class="tab-item-content">
+            <span class="iconfont icon-xiangmu"></span>project
+          </span>
         </div>
-        <div class="header-tab-item" @click="handleClick('life')">
-          <span class="iconfont icon-icon"></span>life
+        <div :class="[activeName==='life' ? 'active-color' : '', 'header-tab-item', 'header-tab-item-hover']" @click="handleClick('life')">
+          <span class="tab-item-content">
+            <span class="iconfont icon-icon"></span>life
+          </span>
         </div>
         <div class="header-tab-item" @click="handleClick('life')">
           <el-button round> <span class="iconfont icon-xiangmu1"></span>resume </el-button>
@@ -30,27 +38,18 @@ import { ref } from 'vue'
 // import { useRouter } from 'vue-router'
 import type { TabsPaneContext } from 'element-plus'
 
-// const router = useRouter()
 let isScollTop = ref(true)
 let activeName = ref('home')
 
-const handleClick = (tabName: String) => {
+const handleClick = (tabName: string) => {
+  activeName.value = tabName
   const anchor = document.querySelector(`#${tabName}`)
-  console.log('-----anchor--anchor------', anchor.offsetTop)
+  document.documentElement.scrollTop = (anchor?.offsetTop || 0) - 70
 
-  document.documentElement.scrollTop = anchor?.offsetTop - 70
-
-  console.log('-----document.documentElement.scrollTop------', document.documentElement.scrollTop)
-
-  // ?.scrollIntoView(
-  //   false
-  // );
-  // console.log(activeName.value, '------tab-------', tab)
-  // router.push({ name: activeName.value, })
+  console.log('------activeName-----', activeName.value)
 }
 
-// const refreshPage = () => {
-// }
+
 
 </script>
 
@@ -78,40 +77,50 @@ const handleClick = (tabName: String) => {
         height: 100%;
         font-size: 20px;
         display: flex;
-        // flex-direction: row;
-        justify-content: center;
-        align-items: center;
         .header-tab-item{
-
           height: 100%;
           position: relative;
-          margin: auto 20px;
-
-          &::before {
-            content: "";
-            position: absolute;
-            height: 5px;
-            width: 0;
-            border-bottom: 5px solid $imp-text-color;
-            left: 50%;
-            top: -5px;
-            transition: all 0.3s ease-out 0.3s;
+          margin: auto 10px;
+          cursor: pointer;
+          color: aliceblue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .tab-item-content {
+            padding: 0px 20px;
           }
-
-          &:hover{
-            color: $imp-text-color;
-            &::before{
-              left: 0;
-              width: 100%;
-            }
-          }
-
-
           .iconfont {
             margin-right: 6px;
             font-size: 20px;
           }
         }
+        .active-color{
+          background-color: $tab-hover-background-color;
+          color: $imp-text-color;
+        }
+        .header-tab-item-hover {
+          &::before {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 0;
+            border-radius: 5px;
+            background: $imp-text-color;
+            left: 50%;
+            top: -5px;
+            transition: all 0.3s ease-out 0s;
+          }
+
+          &:hover{
+            color: $imp-text-color;
+
+            &::before{
+              left: 0;
+              width: 100%;
+            }
+          }
+        }
+
       }
     }
 }

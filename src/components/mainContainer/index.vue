@@ -23,7 +23,7 @@ import Life from '@/view/life/index.vue'
   height: 100%;
   padding: 70px 150px 0px 150px;
 
-  // background-color: $main-background-color;
+  background-color: $main-background-color;
 
 }
 </style>
