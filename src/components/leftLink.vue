@@ -75,6 +75,7 @@
     color: aliceblue;
     &:hover{
         color: $imp-text-color;
+        transform: scale(1.2)
     }
 }
 .tooltip-box-item{

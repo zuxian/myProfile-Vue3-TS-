@@ -2,7 +2,7 @@
   <div>
     about
     <div id="content-one">
-      <p v-for="item in 4" :key="item+'11'" class="scrollbar-demo-item">{{ item }}</p>
+      <p v-for="item in 20" :key="item+'11'" class="scrollbar-demo-item">{{ item }}</p>
     </div>
   </div>
 </template>

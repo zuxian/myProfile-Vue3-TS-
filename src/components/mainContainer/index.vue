@@ -9,10 +9,10 @@ import Life from '@/view/life/index.vue'
 <template>
   <div class="main-container" mode="horizontal">
     <!-- <router-view> -->
-      <Home />
-      <About />
-      <Project />
-      <Life />
+      <Home id="home" />
+      <About id="about" />
+      <Project id="project" />
+      <Life id="life" />
     <!-- </router-view> -->
   </div>
 </template>
@@ -21,8 +21,7 @@ import Life from '@/view/life/index.vue'
 .main-container {
   width: 100%;
   height: 100%;
-  margin-top: 70px;
-  padding: 0px 150px 0px 150px;
+  padding: 70px 150px 0px 150px;
 
   // background-color: $main-background-color;
 

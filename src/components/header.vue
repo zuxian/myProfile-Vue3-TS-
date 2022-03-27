@@ -5,12 +5,21 @@
         <router-link to="/">fuzuxian</router-link>
       </div>
       <div class="header-tab">
-        <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
-          <el-tab-pane label="Home" name="first">Home</el-tab-pane>
-          <el-tab-pane label="About" name="second">About</el-tab-pane>
-          <el-tab-pane label="Project" name="third">Project</el-tab-pane>
-          <el-tab-pane label="Life" name="fourth">Life</el-tab-pane>
-        </el-tabs>
+        <div class="header-tab-item" @click="handleClick('home')">
+          <span class="iconfont icon-zhuye"></span>home
+        </div>
+        <div class="header-tab-item" @click="handleClick('about')">
+          <span class="iconfont icon-207yonghu_yonghunv"></span>about
+        </div>
+        <div class="header-tab-item" @click="handleClick('project')">
+          <span class="iconfont icon-xiangmu"></span>project
+        </div>
+        <div class="header-tab-item" @click="handleClick('life')">
+          <span class="iconfont icon-icon"></span>life
+        </div>
+        <div class="header-tab-item" @click="handleClick('life')">
+          <el-button round> <span class="iconfont icon-xiangmu1"></span>resume </el-button>
+        </div>
       </div>
     </div>
   </div>
@@ -18,13 +27,26 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+// import { useRouter } from 'vue-router'
 import type { TabsPaneContext } from 'element-plus'
 
+// const router = useRouter()
 let isScollTop = ref(true)
-let activeName = ref('first')
+let activeName = ref('home')
 
-const handleClick = (tab: TabsPaneContext, event: Event) => {
-  console.log(tab, event)
+const handleClick = (tabName: String) => {
+  const anchor = document.querySelector(`#${tabName}`)
+  console.log('-----anchor--anchor------', anchor.offsetTop)
+
+  document.documentElement.scrollTop = anchor?.offsetTop - 70
+
+  console.log('-----document.documentElement.scrollTop------', document.documentElement.scrollTop)
+
+  // ?.scrollIntoView(
+  //   false
+  // );
+  // console.log(activeName.value, '------tab-------', tab)
+  // router.push({ name: activeName.value, })
 }
 
 // const refreshPage = () => {
@@ -41,13 +63,55 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
     z-index: 1001;
     color: aliceblue;
     .header-content{
-      padding: 0px 150px;
+      height: 90%;
+      padding: 10px 150px;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
       .header-brand{
+        height: 100%;
         font-size: 24px;
+      }
+
+      .header-tab{
+        height: 100%;
+        font-size: 20px;
+        display: flex;
+        // flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .header-tab-item{
+
+          height: 100%;
+          position: relative;
+          margin: auto 20px;
+
+          &::before {
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: 0;
+            border-bottom: 5px solid $imp-text-color;
+            left: 50%;
+            top: -5px;
+            transition: all 0.3s ease-out 0.3s;
+          }
+
+          &:hover{
+            color: $imp-text-color;
+            &::before{
+              left: 0;
+              width: 100%;
+            }
+          }
+
+
+          .iconfont {
+            margin-right: 6px;
+            font-size: 20px;
+          }
+        }
       }
     }
 }

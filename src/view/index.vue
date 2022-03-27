@@ -2,12 +2,15 @@
 import { ref } from 'vue'
 
 // defineProps<{ msg: string }>()
+import { onMounted } from 'vue';
+
+onMounted(() => { 
+});
 
 const count = ref(0)
 </script>
 
 <template>
-<el-scrollbar>
   <div class="common-layout">
       <Header />
       <Left-link />
@@ -17,7 +20,6 @@ const count = ref(0)
         <!-- <button type="button" @click="count++">count is: {{ count }}</button> -->
 
   </div>
- </el-scrollbar>
 </template>
 
 <style lang="scss" scoped>

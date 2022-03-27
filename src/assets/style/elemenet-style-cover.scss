@@ -1,5 +1,15 @@
 
+.el-button{
+    background-color: $btn-background-color;
+    border-color: $imp-text-color;
+    color: $imp-text-color;
 
+    &:hover{
+        background-color: $btn-background-color;
+        border-color: $imp-text-color;
+        color: $imp-text-color;
+    }
+}
 
 
 

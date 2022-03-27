@@ -6,13 +6,6 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "5027",
-      "name": "手机",
-      "font_class": "shouji",
-      "unicode": "3448",
-      "unicode_decimal": 13384
-    },
-    {
       "icon_id": "77156",
       "name": "微信",
       "font_class": "weixin",
@@ -34,11 +27,32 @@
       "unicode_decimal": 58966
     },
     {
-      "icon_id": "768731",
-      "name": "视频问诊",
-      "font_class": "shouye",
-      "unicode": "e63e",
-      "unicode_decimal": 58942
+      "icon_id": "374916",
+      "name": "项目1",
+      "font_class": "xiangmu1",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "554098",
+      "name": "图片集",
+      "font_class": "iconset0149",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "595407",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "798179",
+      "name": "生活",
+      "font_class": "icon",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
     },
     {
       "icon_id": "829865",
@@ -55,6 +69,34 @@
       "unicode_decimal": 58923
     },
     {
+      "icon_id": "1308391",
+      "name": "207用户_用户女",
+      "font_class": "207yonghu_yonghunv",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "3186909",
+      "name": "投简历",
+      "font_class": "toujianli",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "3207741",
+      "name": "项目",
+      "font_class": "icon-project",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "4236658",
+      "name": "主项目",
+      "font_class": "zhuxiangmu",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
       "icon_id": "4552970",
       "name": "邮箱",
       "font_class": "youxiang",
@@ -62,25 +104,25 @@
       "unicode_decimal": 59656
     },
     {
-      "icon_id": "4937000",
-      "name": "github-fill",
-      "font_class": "github-fill",
-      "unicode": "e885",
-      "unicode_decimal": 59525
-    },
-    {
-      "icon_id": "9322677",
-      "name": "微信",
-      "font_class": "weixin1",
-      "unicode": "e625",
-      "unicode_decimal": 58917
-    },
-    {
       "icon_id": "9785618",
       "name": "github",
       "font_class": "github",
       "unicode": "e651",
       "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "11121472",
+      "name": "项目",
+      "font_class": "xiangmu",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "23563216",
+      "name": "PROJECT",
+      "font_class": "PROJECT",
+      "unicode": "ea42",
+      "unicode_decimal": 59970
     }
   ]
 }
