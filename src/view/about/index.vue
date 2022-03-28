@@ -18,71 +18,19 @@
     </div>
     <div class="card-wrap">
       <el-row :gutter="25">
-        <el-col :span="8">
-          <span class="my-card-item"> 
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-kaifa"></use>
-            </svg>前端开发 
-          </span>
-        </el-col>
-        <el-col :span="8">
-          <span class="my-card-item">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-icon-test1"></use>
-            </svg>运维-监控-部署 
-          </span>
-        </el-col>
-        <el-col :span="8">
-          <span class="my-card-item"> 
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-xitongshezhi"></use>
-            </svg>后台管理系统 
-          </span>
-        </el-col>
-      </el-row>
-      <el-row :gutter="25">
-        <el-col :span="8">
-          <span class="my-card-item">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-Robot-bad"></use>
-            </svg>自动化学院 
-          </span>
-        </el-col>
-        <el-col :span="8">
-          <span class="my-card-item"> 
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-Imagetuxiangshibie"></use>
-            </svg>深度学习-图像处理 
-          </span>
-        </el-col>
-        <el-col :span="8">
-          <span class="my-card-item"> 
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-icon-rgb_jiqixuexisuanfayinqing"></use>
-            </svg>数据结构-算法 
-          </span>
-        </el-col>
-      </el-row>
-      <el-row :gutter="25">
-        <el-col :span="8">
-          <span class="my-card-item">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-kaixinguo"></use>
-            </svg>宅女、自嗨、佛系
-          </span>
-        </el-col>
-        <el-col :span="8">
-          <span class="my-card-item"> 
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-icon-test"></use>
-            </svg>搬砖、干饭 
-          </span>
-        </el-col>
-        <el-col :span="8">
-          <span class="my-card-item">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-gougou1"></use>
-            </svg>汪汪汪-_-!! 
+        <el-col v-for="(item, index) in cardInfo" :key="index"  :span="8">
+          <span 
+            @mouseover="mouseOver(index)"
+            @mouseleave="mouseLeave"
+            :class="[
+              animatingIndex === index ? 'animate__animated' : '', 
+              item.animateClassName, 
+              'animate__infinite', 'my-card-item'
+            ]"
+            :style="{animationDuration: '1200ms'}"
+          >
+            <svg class="icon" aria-hidden="true" v-html="item.iconItem">    
+            </svg>{{item.tips}}
           </span>
         </el-col>
       </el-row>
@@ -120,6 +68,28 @@ const activities = [
   },
 ]
 
+const htmlString = ref()
+let animatingIndex = ref(-1)
+
+const cardInfo = [
+  { tips: '前端开发', animateClassName: 'animate__bounce', iconItem: `<use xlink:href='#icon-kaifa'></use>` },
+  { tips: '运维-监控-部署', animateClassName: 'animate__swing', iconItem: `<use xlink:href='#icon-icon-test1'></use>`},
+  { tips: '后台管理系统', animateClassName: 'animate__flash', iconItem: `<use xlink:href='#icon-xitongshezhi'></use>` },
+  { tips: '自动化学院', animateClassName: 'animate__flipInY', iconItem: `<use xlink:href='#icon-Robot-bad'></use>` },
+  { tips: '深度学习-图像处理', animateClassName: 'animate__heartBeat', iconItem: `<use xlink:href='#icon-Imagetuxiangshibie'></use>` },
+  { tips: '数据结构-算法', animateClassName: 'animate__tada', iconItem: `<use xlink:href='#icon-icon-rgb_jiqixuexisuanfayinqing'></use>` },
+  { tips: '宅女、自嗨、佛系', animateClassName: 'animate__shakeY', iconItem: `<use xlink:href='#icon-kaixinguo'></use>` },
+  { tips: '搬砖、干饭', animateClassName: 'animate__shakeX', iconItem: `<use xlink:href='#icon-icon-test'></use>` },
+  { tips: '汪汪汪-_-!!', animateClassName: 'animate__jello', iconItem: `<use xlink:href='#icon-gougou1'></use>` },
+]
+
+const mouseOver = (index: number) => {
+  animatingIndex.value = index
+}
+const mouseLeave = () => {
+  animatingIndex.value = -1
+}
+
 </script>
 
 <style lang="scss" scoped>
@@ -143,6 +113,7 @@ const activities = [
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
+  padding-right: 5px;
 }
 .my-card-item{
   height: 50px;
@@ -155,6 +126,4 @@ const activities = [
   justify-content: center;
   align-items: center;
 }
-
-
 </style>
