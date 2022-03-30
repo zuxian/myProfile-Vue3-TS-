@@ -1,4 +1,7 @@
 <template>
+  <div>
+    <MySplitPane />
+  </div>
   <div class="experience-wrap">
     <div class="tab-wrap">
       <el-timeline>
@@ -41,6 +44,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { MoreFilled } from '@element-plus/icons-vue'
+import MySplitPane from "./splitPane/index.vue";
+
 
 const activities = [
   {
