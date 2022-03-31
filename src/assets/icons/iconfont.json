@@ -6,11 +6,25 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "68268",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "f00ac",
+      "unicode_decimal": 983212
+    },
+    {
       "icon_id": "77156",
       "name": "微信",
       "font_class": "weixin",
       "unicode": "f0106",
       "unicode_decimal": 983302
+    },
+    {
+      "icon_id": "77403",
+      "name": "链接",
+      "font_class": "lianjie",
+      "unicode": "f010b",
+      "unicode_decimal": 983307
     },
     {
       "icon_id": "145451",
@@ -62,13 +76,6 @@
       "unicode_decimal": 58890
     },
     {
-      "icon_id": "1235218",
-      "name": "手机号",
-      "font_class": "shoujihao",
-      "unicode": "e62b",
-      "unicode_decimal": 58923
-    },
-    {
       "icon_id": "1308391",
       "name": "207用户_用户女",
       "font_class": "207yonghu_yonghunv",
@@ -76,11 +83,25 @@
       "unicode_decimal": 58942
     },
     {
-      "icon_id": "1319372",
-      "name": "睡觉",
-      "font_class": "shuijue",
-      "unicode": "e689",
-      "unicode_decimal": 59017
+      "icon_id": "1727563",
+      "name": "327全屏",
+      "font_class": "quanping",
+      "unicode": "e8fa",
+      "unicode_decimal": 59642
+    },
+    {
+      "icon_id": "1727566",
+      "name": "328退出全屏",
+      "font_class": "tuichuquanping",
+      "unicode": "e8fb",
+      "unicode_decimal": 59643
+    },
+    {
+      "icon_id": "2076191",
+      "name": "分享",
+      "font_class": "fenxiang1",
+      "unicode": "e86e",
+      "unicode_decimal": 59502
     },
     {
       "icon_id": "2800307",
@@ -111,18 +132,11 @@
       "unicode_decimal": 59054
     },
     {
-      "icon_id": "3896042",
-      "name": "狗狗",
-      "font_class": "gougou",
-      "unicode": "e61a",
-      "unicode_decimal": 58906
-    },
-    {
-      "icon_id": "4236658",
-      "name": "主项目",
-      "font_class": "zhuxiangmu",
-      "unicode": "e61b",
-      "unicode_decimal": 58907
+      "icon_id": "4139287",
+      "name": "夜晚月亮",
+      "font_class": "lkingboyewanyueliang",
+      "unicode": "e602",
+      "unicode_decimal": 58882
     },
     {
       "icon_id": "4552970",
@@ -148,23 +162,16 @@
     {
       "icon_id": "5194272",
       "name": "狗狗",
-      "font_class": "gougou1",
+      "font_class": "gougou",
       "unicode": "e606",
       "unicode_decimal": 58886
     },
     {
-      "icon_id": "5219488",
-      "name": "睡觉(女)",
-      "font_class": "shuijuenv",
-      "unicode": "e610",
-      "unicode_decimal": 58896
-    },
-    {
-      "icon_id": "5220054",
-      "name": "狗",
-      "font_class": "gou",
-      "unicode": "e602",
-      "unicode_decimal": 58882
+      "icon_id": "5203299",
+      "name": "太阳",
+      "font_class": "taiyang",
+      "unicode": "e635",
+      "unicode_decimal": 58933
     },
     {
       "icon_id": "5483283",
@@ -174,13 +181,6 @@
       "unicode_decimal": 59079
     },
     {
-      "icon_id": "5483292",
-      "name": "睡觉",
-      "font_class": "shuijue1",
-      "unicode": "e6c9",
-      "unicode_decimal": 59081
-    },
-    {
       "icon_id": "5950470",
       "name": "icon-rgb_机器学习算法引擎",
       "font_class": "icon-rgb_jiqixuexisuanfayinqing",
@@ -188,18 +188,18 @@
       "unicode_decimal": 59124
     },
     {
-      "icon_id": "5958394",
-      "name": "Image 图像识别",
-      "font_class": "Image",
-      "unicode": "e8c6",
-      "unicode_decimal": 59590
+      "icon_id": "5993150",
+      "name": "复制",
+      "font_class": "fuzhi",
+      "unicode": "ec7a",
+      "unicode_decimal": 60538
     },
     {
-      "icon_id": "6913571",
-      "name": "系统管理",
-      "font_class": "xitongguanli",
-      "unicode": "e66e",
-      "unicode_decimal": 58990
+      "icon_id": "6883114",
+      "name": "中英文",
+      "font_class": "zhongyingwen",
+      "unicode": "e7a3",
+      "unicode_decimal": 59299
     },
     {
       "icon_id": "7219134",
@@ -207,6 +207,27 @@
       "font_class": "xiaolian",
       "unicode": "e60c",
       "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "7556389",
+      "name": "全屏",
+      "font_class": "quanping1",
+      "unicode": "e7ba",
+      "unicode_decimal": 59322
+    },
+    {
+      "icon_id": "7594028",
+      "name": "24gl-fullScreenExit",
+      "font_class": "24gl-fullScreenExit",
+      "unicode": "ea69",
+      "unicode_decimal": 60009
+    },
+    {
+      "icon_id": "7594135",
+      "name": "24gf-fullScreenExit",
+      "font_class": "24gf-fullScreenExit",
+      "unicode": "ea7d",
+      "unicode_decimal": 60029
     },
     {
       "icon_id": "7732890",
@@ -244,32 +265,18 @@
       "unicode_decimal": 58951
     },
     {
-      "icon_id": "13592808",
-      "name": "Image 图像识别",
-      "font_class": "Imagetuxiangshibie1",
-      "unicode": "e70b",
-      "unicode_decimal": 59147
+      "icon_id": "20574648",
+      "name": "狗头",
+      "font_class": "goutou",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
     },
     {
-      "icon_id": "18164738",
-      "name": "分叉,大数据,数据结构,关系,关系分析,关系网,组织",
-      "font_class": "relation",
-      "unicode": "e867",
-      "unicode_decimal": 59495
-    },
-    {
-      "icon_id": "23563216",
-      "name": "PROJECT",
-      "font_class": "PROJECT",
-      "unicode": "ea42",
-      "unicode_decimal": 59970
-    },
-    {
-      "icon_id": "26344621",
-      "name": "深度学习_分类_rnn分类",
-      "font_class": "shenduxuexi_fenlei_rnnfenlei",
-      "unicode": "f22f",
-      "unicode_decimal": 61999
+      "icon_id": "21417199",
+      "name": "水印",
+      "font_class": "shuiyin",
+      "unicode": "e603",
+      "unicode_decimal": 58883
     },
     {
       "icon_id": "27196339",

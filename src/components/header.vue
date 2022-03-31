@@ -4,30 +4,23 @@
       <div class="header-brand">
         <router-link to="/">fuzuxian</router-link>
       </div>
-      <div class="header-tab">
-        <div :class="[activeName==='home' ? 'active-color' : '', 'header-tab-item', 'header-tab-item-hover']" @click="handleClick('home')">
+      <div class="header-center">
+        <div 
+          v-for="(item, index) in headerCenterInfo" 
+          :key="index"
+          :class="[activeName === item.nameItem ? 'active-color' : '', 'header-tab-item', 'header-tab-item-hover']" 
+          @click="handleClick(item.nameItem)"
+        >
           <span class="tab-item-content">
-            <span class="iconfont icon-zhuye"></span>home
+            <span :class="['iconfont', item.iconItem]"></span>{{ item.nameItem }}
           </span>
         </div>
-        <div :class="[activeName==='about' ? 'active-color' : '', 'header-tab-item', 'header-tab-item-hover']" @click="handleClick('about')">
-          <span class="tab-item-content">
-            <span class="iconfont icon-207yonghu_yonghunv"></span>about
-          </span>
-        </div>
-        <div :class="[activeName==='project' ? 'active-color' : '', 'header-tab-item', 'header-tab-item-hover']" @click="handleClick('project')">
-          <span class="tab-item-content">
-            <span class="iconfont icon-xiangmu"></span>project
-          </span>
-        </div>
-        <div :class="[activeName==='life' ? 'active-color' : '', 'header-tab-item', 'header-tab-item-hover']" @click="handleClick('life')">
-          <span class="tab-item-content">
-            <span class="iconfont icon-icon"></span>life
-          </span>
-        </div>
-        <div class="header-tab-item" @click="handleClick('life')">
+      </div>
+      <div class="header-brand">
+        <router-link to="/">fuzux222ian</router-link>
+        <span  @click="handleClick('life')">
           <el-button round> <span class="iconfont icon-xiangmu1"></span>resume </el-button>
-        </div>
+        </span>
       </div>
     </div>
   </div>
@@ -35,22 +28,22 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-// import { useRouter } from 'vue-router'
-import type { TabsPaneContext } from 'element-plus'
 
 let isScollTop = ref(true)
 let activeName = ref('home')
+
+let headerCenterInfo = [
+  { nameItem: 'home', iconItem: 'icon-zhuye' },
+  { nameItem: 'about', iconItem: 'icon-207yonghu_yonghunv' },
+  { nameItem: 'project', iconItem: 'icon-xiangmu' },
+  { nameItem: 'life', iconItem: 'icon-icon' },
+]
 
 const handleClick = (tabName: string) => {
   activeName.value = tabName
   const anchor = document.querySelector(`#${tabName}`)
   document.documentElement.scrollTop = (anchor?.offsetTop || 0) - 70
-
-  console.log('------activeName-----', activeName.value)
 }
-
-
-
 </script>
 
 <style lang="scss" scoped>
@@ -73,7 +66,7 @@ const handleClick = (tabName: string) => {
         font-size: 24px;
       }
 
-      .header-tab{
+      .header-center{
         height: 100%;
         font-size: 20px;
         display: flex;

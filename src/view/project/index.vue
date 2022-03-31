@@ -1,14 +1,13 @@
 <template>
   <div>
-    Project
-    <div id="content-one">
-      <p v-for="item in 20" :key="item+'11'" class="scrollbar-demo-item">{{ item }}</p>
+    <div>
+      <MySplitPane />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
+import MySplitPane from "./splitPane/index.vue";
 </script>
 
 <style lang="scss" scoped>

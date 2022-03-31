@@ -1,7 +1,4 @@
 <template>
-  <div>
-    <MySplitPane />
-  </div>
   <div class="experience-wrap">
     <div class="tab-wrap">
       <el-timeline>
@@ -44,7 +41,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { MoreFilled } from '@element-plus/icons-vue'
-import MySplitPane from "./splitPane/index.vue";
+
 
 
 const activities = [
@@ -85,7 +82,7 @@ const cardInfo = [
   { tips: '数据结构-算法', animateClassName: 'animate__tada', iconItem: `<use xlink:href='#icon-icon-rgb_jiqixuexisuanfayinqing'></use>` },
   { tips: '宅女、自嗨、佛系', animateClassName: 'animate__shakeY', iconItem: `<use xlink:href='#icon-kaixinguo'></use>` },
   { tips: '搬砖、干饭', animateClassName: 'animate__shakeX', iconItem: `<use xlink:href='#icon-icon-test'></use>` },
-  { tips: '汪汪汪-_-!!', animateClassName: 'animate__jello', iconItem: `<use xlink:href='#icon-gougou1'></use>` },
+  { tips: '汪汪汪-_-!!', animateClassName: 'animate__jello', iconItem: `<use xlink:href='#icon-goutou'></use>` },
 ]
 
 const mouseOver = (index: number) => {

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1648386982625') format('truetype');
+  src: url('iconfont.ttf?t=1648739654489') format('truetype');
 }
 
 .iconfont {
@@ -11,8 +11,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-fenxiang:before {
+  content: "\f00ac";
+}
+
 .icon-weixin:before {
   content: "\f0106";
+}
+
+.icon-lianjie:before {
+  content: "\f010b";
 }
 
 .icon-shipin:before {
@@ -43,16 +51,20 @@
   content: "\e60a";
 }
 
-.icon-shoujihao:before {
-  content: "\e62b";
-}
-
 .icon-207yonghu_yonghunv:before {
   content: "\e63e";
 }
 
-.icon-shuijue:before {
-  content: "\e689";
+.icon-quanping:before {
+  content: "\e8fa";
+}
+
+.icon-tuichuquanping:before {
+  content: "\e8fb";
+}
+
+.icon-fenxiang1:before {
+  content: "\e86e";
 }
 
 .icon-chifan:before {
@@ -71,12 +83,8 @@
   content: "\e6ae";
 }
 
-.icon-gougou:before {
-  content: "\e61a";
-}
-
-.icon-zhuxiangmu:before {
-  content: "\e61b";
+.icon-lkingboyewanyueliang:before {
+  content: "\e602";
 }
 
 .icon-youxiang:before {
@@ -91,40 +99,44 @@
   content: "\e64c";
 }
 
-.icon-gougou1:before {
+.icon-gougou:before {
   content: "\e606";
 }
 
-.icon-shuijuenv:before {
-  content: "\e610";
-}
-
-.icon-gou:before {
-  content: "\e602";
+.icon-taiyang:before {
+  content: "\e635";
 }
 
 .icon-kaixin:before {
   content: "\e6c7";
 }
 
-.icon-shuijue1:before {
-  content: "\e6c9";
-}
-
 .icon-icon-rgb_jiqixuexisuanfayinqing:before {
   content: "\e6f4";
 }
 
-.icon-Image:before {
-  content: "\e8c6";
+.icon-fuzhi:before {
+  content: "\ec7a";
 }
 
-.icon-xitongguanli:before {
-  content: "\e66e";
+.icon-zhongyingwen:before {
+  content: "\e7a3";
 }
 
 .icon-xiaolian:before {
   content: "\e60c";
+}
+
+.icon-quanping1:before {
+  content: "\e7ba";
+}
+
+.icon-24gl-fullScreenExit:before {
+  content: "\ea69";
+}
+
+.icon-24gf-fullScreenExit:before {
+  content: "\ea7d";
 }
 
 .icon-kaixinguo:before {
@@ -147,20 +159,12 @@
   content: "\e647";
 }
 
-.icon-Imagetuxiangshibie1:before {
-  content: "\e70b";
+.icon-goutou:before {
+  content: "\e60d";
 }
 
-.icon-relation:before {
-  content: "\e867";
-}
-
-.icon-PROJECT:before {
-  content: "\ea42";
-}
-
-.icon-shenduxuexi_fenlei_rnnfenlei:before {
-  content: "\f22f";
+.icon-shuiyin:before {
+  content: "\e603";
 }
 
 .icon-Robot-bad:before {

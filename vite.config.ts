@@ -19,6 +19,9 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
+  server: {
+    port: 8888
+  },
   // 配置别名
   resolve: {
     alias: { '@': resolve(__dirname, 'src') },
