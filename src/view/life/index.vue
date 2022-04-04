@@ -1,13 +1,13 @@
 <template>
   <div>
-    life
-    <div id="content-one">
-      <p v-for="item in 20" :key="item+'11'" class="scrollbar-demo-item">{{ item }}</p>
+    <div style="padding: 200px 100px;">
+      <DisplayChart />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import DisplayChart from "./displayChart/index.vue"
 
 </script>
 
