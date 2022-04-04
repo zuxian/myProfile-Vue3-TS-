@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import LeftLink from "@/components/leftLink.vue";
+import Header from "@/components/header.vue";
+import MainContainer from "@/components/MainContainer/index.vue";
+
 
 // defineProps<{ msg: string }>()
 import { onMounted } from 'vue';
@@ -13,8 +17,8 @@ const count = ref(0)
 <template>
   <div class="common-layout">
       <Header />
-      <Left-link />
-      <Main-container />
+      <LeftLink />
+      <MainContainer />
       
       
         <!-- <button type="button" @click="count++">count is: {{ count }}</button> -->

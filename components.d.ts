@@ -2,27 +2,26 @@
 // We suggest you to commit this file into source control
 // Read more: https://github.com/vuejs/vue-next/pull/3399
 
-declare module 'vue' {
-  export interface GlobalComponents {
-    ElButton: typeof import('element-plus/es')['ElButton']
-    ElCard: typeof import('element-plus/es')['ElCard']
-    ElCol: typeof import('element-plus/es')['ElCol']
-    ElIcon: typeof import('element-plus/es')['ElIcon']
-    ElMain: typeof import('element-plus/es')['ElMain']
-    ElRow: typeof import('element-plus/es')['ElRow']
-    ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
-    ElSkeleton: typeof import('element-plus/es')['ElSkeleton']
-    ElSpace: typeof import('element-plus/es')['ElSpace']
-    ElTabPane: typeof import('element-plus/es')['ElTabPane']
-    ElTabs: typeof import('element-plus/es')['ElTabs']
-    ElTag: typeof import('element-plus/es')['ElTag']
-    ElTimeline: typeof import('element-plus/es')['ElTimeline']
-    ElTimelineItem: typeof import('element-plus/es')['ElTimelineItem']
-    ElTooltip: typeof import('element-plus/es')['ElTooltip']
-    Header: typeof import('./src/components/header.vue')['default']
-    LeftLink: typeof import('./src/components/leftLink.vue')['default']
-    MainContainer: typeof import('./src/components/mainContainer/index.vue')['default']
-  }
-}
+// declare module 'vue' {
+//   export interface GlobalComponents {
+//     ElButton: typeof import('element-plus/es')['ElButton']
+//     ElCard: typeof import('element-plus/es')['ElCard']
+//     ElCol: typeof import('element-plus/es')['ElCol']
+//     ElIcon: typeof import('element-plus/es')['ElIcon']
+//     ElMain: typeof import('element-plus/es')['ElMain']
+//     ElRow: typeof import('element-plus/es')['ElRow']
+//     ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
+//     ElSpace: typeof import('element-plus/es')['ElSpace']
+//     ElTabPane: typeof import('element-plus/es')['ElTabPane']
+//     ElTabs: typeof import('element-plus/es')['ElTabs']
+//     ElTag: typeof import('element-plus/es')['ElTag']
+//     ElTimeline: typeof import('element-plus/es')['ElTimeline']
+//     ElTimelineItem: typeof import('element-plus/es')['ElTimelineItem']
+//     ElTooltip: typeof import('element-plus/es')['ElTooltip']
+//     Header: typeof import('./src/components/header.vue')['default']
+//     LeftLink: typeof import('./src/components/leftLink.vue')['default']
+//     MainContainer: typeof import('./src/components/mainContainer/index.vue')['default']
+//   }
+// }
 
-export { }
+// export { }
