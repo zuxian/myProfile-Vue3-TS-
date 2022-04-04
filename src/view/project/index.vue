@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="split-pane">
+    <div class="split-pane-wrap">
       <MySplitPane />
     </div>
   </div>
@@ -11,7 +11,7 @@ import MySplitPane from "./splitPane/index.vue";
 </script>
 
 <style lang="scss" scoped>
-.split-pane{
-  margin: 50px 100px;
+.split-pane-wrap {
+  margin: 100px 100px;
 }
 </style>

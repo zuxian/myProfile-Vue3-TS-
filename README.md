@@ -261,3 +261,15 @@ canvas的toDataURL()
 比如  echart
 
 https://www.cnblogs.com/ttjm/p/10494905.html
+
+
+
+####  echart按需引进+自定义主题
+
+> 下载或复制以下的主题保存至 *.json 文件；
+> 读取该 JSON 文件，并使用 obj = JSON.parse(data) 将其转换成对象；
+> 调用 echarts.registerTheme('purple-passion', obj) 注册主题；
+> 使用 echarts.init(dom, 'purple-passion') 创建图表，第二个参数即为刚才注册的主题名字。
+
+
+

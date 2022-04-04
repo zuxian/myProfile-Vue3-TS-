@@ -29,7 +29,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-let isScollTop = ref(true)
+let isScollTop = ref(false)
 let activeName = ref('home')
 
 let headerCenterInfo = [
@@ -48,78 +48,85 @@ const handleClick = (tabName: string) => {
 
 <style lang="scss" scoped>
 .header-container{
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    top: 0px;
-    z-index: 1001;
-    color: aliceblue;
-    .header-content{
-      height: 90%;
-      padding: 10px 150px;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  z-index: 1001;
+  color: aliceblue;
+  .header-content{
+    height: 90%;
+    padding: 10px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-brand{
+      height: 100%;
+      font-size: 24px;
+    }
+
+    .header-center{
+      height: 100%;
+      font-size: 20px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      .header-brand{
+      .header-tab-item{
         height: 100%;
-        font-size: 24px;
-      }
-
-      .header-center{
-        height: 100%;
-        font-size: 20px;
+        position: relative;
+        margin: auto 10px;
+        cursor: pointer;
+        color: aliceblue;
         display: flex;
-        .header-tab-item{
-          height: 100%;
-          position: relative;
-          margin: auto 10px;
-          cursor: pointer;
-          color: aliceblue;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          .tab-item-content {
-            padding: 0px 20px;
-          }
-          .iconfont {
-            margin-right: 6px;
-            font-size: 20px;
-          }
+        justify-content: center;
+        align-items: center;
+        .tab-item-content {
+          padding: 0px 20px;
         }
-        .active-color{
-          background-color: $tab-hover-background-color;
+        .iconfont {
+          margin-right: 6px;
+          font-size: 20px;
+        }
+      }
+      .active-color{
+        background-color: $tab-hover-background-color;
+        color: $imp-text-color;
+        .iconfont {
           color: $imp-text-color;
         }
-        .header-tab-item-hover {
-          &::before {
-            content: "";
-            position: absolute;
-            height: 3px;
-            width: 0;
-            border-radius: 5px;
-            background: $imp-text-color;
-            left: 50%;
-            top: -5px;
-            transition: all 0.3s ease-out 0s;
-          }
+      }
+      .header-tab-item-hover {
 
-          &:hover{
-            color: $imp-text-color;
-
-            &::before{
-              left: 0;
-              width: 100%;
-            }
-          }
+        &::before {
+          content: "";
+          position: absolute;
+          height: 3px;
+          width: 0;
+          border-radius: 5px;
+          background: $imp-text-color;
+          left: 50%;
+          top: -5px;
+          transition: all 0.3s ease-out 0s;
         }
 
+        &:hover{
+          color: $imp-text-color;
+          .iconfont {
+            color: $imp-text-color;
+          }
+          
+          &::before{
+            left: 0;
+            width: 100%;
+          }
+        }
       }
+
     }
+  }
 }
 
 .opecity-background {
-  background-color: red;
+  background-color: $btn-background-color;
 }
 
 </style>

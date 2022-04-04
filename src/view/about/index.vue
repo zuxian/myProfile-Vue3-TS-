@@ -96,6 +96,7 @@ const mouseLeave = () => {
 
 <style lang="scss" scoped>
 .experience-wrap {
+  margin: 300px 0px;
   padding: 0px 100px;
   display: flex;
   .tab-wrap {
