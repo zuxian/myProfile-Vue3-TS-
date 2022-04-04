@@ -29,13 +29,33 @@
 }
 
 
+.el-tag.el-tag--success {
+    margin-right: 10px;
+    background-color: $tab-hover-background-color;
+    border: 1px solid $imp-text-color;
+    color: $white-text-color;
+    &:hover {
+        background-color: $tab-hover-background-color;
+    }
+}
+
+
+
 // .el-card {
 //     height: 50px;
 //     background-color: $tab-hover-background-color;
-//     color: $white-text-color;
-//     border: 1px solid $imp-text-color;
+    // color: $white-text-color;
+    // border: 1px solid $imp-text-color;
 //     padding: 10px;
 // }
+
+    // .el-card__header {
+    //     padding: 10px 20px;
+    //     border-bottom: 1px solid $imp-text-color;
+    // }
+
+
+
 // .el-card__body {
     
 // }

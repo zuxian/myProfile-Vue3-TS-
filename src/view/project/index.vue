@@ -12,6 +12,6 @@ import MySplitPane from "./splitPane/index.vue";
 
 <style lang="scss" scoped>
 .split-pane{
-  padding: 0px 100px;
+  margin: 50px 100px;
 }
 </style>

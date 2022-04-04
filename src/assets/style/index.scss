@@ -3,3 +3,11 @@
 @import './elemenet-style-cover.scss';
 
 
+.iconfont {
+    font-size: 26px;
+    color: aliceblue;
+    &:hover{
+        color: $imp-text-color;
+        transform: scale(1.2)
+    }
+}
