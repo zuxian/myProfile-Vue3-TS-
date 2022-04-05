@@ -17,9 +17,12 @@
         </div>
       </div>
       <div class="header-brand">
-        <router-link to="/">fuzux222ian</router-link>
+        <span class="iconfont icon-lkingboyewanyueliang"></span>
+        <span class="iconfont icon-zhongyingwen"></span>
+        <span class="iconfont icon-shuiyin"></span>
+        <Screenfull />
         <span  @click="handleClick('life')">
-          <el-button round> <span class="iconfont icon-xiangmu1"></span>resume </el-button>
+          <el-button round> resume </el-button>
         </span>
       </div>
     </div>
@@ -28,6 +31,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import Screenfull from "./screenfull/index.vue"
 
 let isScollTop = ref(false)
 let activeName = ref('home')
@@ -54,22 +58,36 @@ const handleClick = (tabName: string) => {
   top: 0px;
   z-index: 1001;
   color: aliceblue;
+
+  .iconfont {
+    font-size: 22px;
+  }
+
   .header-content{
     height: 90%;
     padding: 10px 150px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     .header-brand{
-      height: 100%;
+      width: 25%;
       font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .iconfont {
+        margin-right: 12px;
+      }
     }
 
     .header-center{
+      flex: 1;
       height: 100%;
       font-size: 20px;
       display: flex;
+      justify-content: center;
       .header-tab-item{
         height: 100%;
         position: relative;
@@ -81,10 +99,6 @@ const handleClick = (tabName: string) => {
         align-items: center;
         .tab-item-content {
           padding: 0px 20px;
-        }
-        .iconfont {
-          margin-right: 6px;
-          font-size: 20px;
         }
       }
       .active-color{
