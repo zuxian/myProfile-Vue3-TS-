@@ -15,7 +15,10 @@ import Gallery from "./Gallery/index.vue";
 </script>
 
 <style lang="scss" scoped>
-.gallery-wrap, .split-pane-wrap {
+.split-pane-wrap {
   margin: 100px 100px;
+}
+.gallery-wrap {
+  margin: 100px 200px;
 }
 </style>

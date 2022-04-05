@@ -7,7 +7,7 @@
     font-size: 26px;
     color: aliceblue;
     &:hover{
-        color: $imp-text-color;
+        color: $hover-background-color;
         transform: scale(1.2)
     }
 }
