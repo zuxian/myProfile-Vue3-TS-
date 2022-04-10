@@ -2,7 +2,7 @@
   <div>
     <div class="proj-img-wrap" >
         <a href="https://github.com/zuxian/myProfile-Vue3-TS-" aria-label="主页" target="_blank" rel="noreferrer">
-            <img src="../../../../assets/images/fzx-proflie.jpg" class="proj-img" />
+            <img src="../../../../assets/images/fuzuxian/fzx-proflie-1.jpg" class="proj-img" />
         </a>
     </div>
     <div>

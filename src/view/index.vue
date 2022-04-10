@@ -16,11 +16,14 @@ const count = ref(0)
 
 <template>
   <div class="common-layout">
+
       <Header />
       <LeftLink />
       <MainContainer />
       
-      
+      <el-backtop title="回到顶部" :right="60" :bottom="100" >
+        <span class="iconfont icon-fanhuidingbu"></span>
+      </el-backtop>
         <!-- <button type="button" @click="count++">count is: {{ count }}</button> -->
 
   </div>

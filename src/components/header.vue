@@ -16,7 +16,7 @@
           </span>
         </div>
       </div>
-      <div class="header-brand">
+      <div :class="['header-brand', 'header-mode']">
         <span class="iconfont icon-lkingboyewanyueliang"></span>
         <span class="iconfont icon-zhongyingwen"></span>
         <span class="iconfont icon-shuiyin"></span>
@@ -75,10 +75,13 @@ const handleClick = (tabName: string) => {
       font-size: 24px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
+    }
 
+    .header-mode {
+      justify-content: flex-end;
       .iconfont {
-        margin-right: 12px;
+        margin-right: 15px;
       }
     }
 

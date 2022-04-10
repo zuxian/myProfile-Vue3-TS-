@@ -2,7 +2,7 @@
   <div style="position: relative;">
     <div class="proj-img-wrap" >
       <a href="http://47.103.74.217" aria-label="博客" target="_blank" rel="noreferrer">
-        <img src="../../../../assets/images/fzx-proflie.jpg" class="proj-img" />
+        <img src="../../../../assets/images/fuzuxian/fzx-proflie-1.jpg" class="proj-img" />
       </a>
     </div>
     <div class="proj-header">

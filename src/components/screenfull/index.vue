@@ -19,6 +19,6 @@ const { isFullscreen, toggle } = useFullscreen();
 <style lang="scss" scoped>
 .iconfont {
   font-size: 22px;
-  margin-right: 12px;
+  margin-right: 15px;
 }
 </style>

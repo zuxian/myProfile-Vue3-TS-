@@ -37,12 +37,12 @@ import { ref } from "vue";
 const projCardInfo = [
   {
     title: '我的生活映像', 
-    imgSrc: new URL('../../../assets/images/cat/7-2.jpg', import.meta.url).href, 
+    imgSrc: new URL('../../../assets/images/cat/7.jpg', import.meta.url).href, 
     link: 'http://zuxian.gitee.io/album/', 
   },
   {
     title: '我的生活映像', 
-    imgSrc: new URL('../../../assets/images/cat/7.jpg', import.meta.url).href, 
+    imgSrc: new URL('../../../assets/images/cat/7-2.jpg', import.meta.url).href, 
     link: 'http://zuxian.gitee.io/album/'},
   {
     title: '我的生活映像', 
@@ -50,17 +50,17 @@ const projCardInfo = [
     link: 'http://zuxian.gitee.io/album/'},
   {
     title: '我的生活映像', 
-    imgSrc: new URL('../../../assets/images/cat/8-3.jpg', import.meta.url).href, 
+    imgSrc: new URL('../../../assets/images/fuzuxian/fzx-02.jpg', import.meta.url).href, 
     link: 'http://zuxian.gitee.io/album/'
   },
   {
     title: '我的生活映像', 
-    imgSrc: new URL('../../../assets/images/cat/8-1.jpg', import.meta.url).href, 
+    imgSrc: new URL('../../../assets/images/fuzuxian/fzx-01.jpg', import.meta.url).href, 
     link: 'http://zuxian.gitee.io/album/'
   },
   {
     title: '我的生活映像', 
-    imgSrc: new URL('../../../assets/images/cat/8.jpg', import.meta.url).href, 
+    imgSrc: new URL('../../../assets/images/fuzuxian/fzx-03.jpg', import.meta.url).href, 
     link: 'http://zuxian.gitee.io/album/'
   },
 ]

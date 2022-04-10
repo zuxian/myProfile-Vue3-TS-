@@ -39,6 +39,22 @@
     }
 }
 
+.el-backtop {
+  width: 60px;
+  height: 60px;
+  background-color: $btn-background-color;
+  color: $white-text-color;
+ 
+  .iconfont{
+    margin-right: 0px;
+    font-size: 30px;
+  }
+
+  &:hover {
+    background-color: $btn-background-color;
+  }
+
+}
 
 
 // .el-card {

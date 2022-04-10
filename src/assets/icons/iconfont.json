@@ -76,11 +76,18 @@
       "unicode_decimal": 58890
     },
     {
+      "icon_id": "1305463",
+      "name": "查看",
+      "font_class": "chakan",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
       "icon_id": "1308391",
       "name": "207用户_用户女",
       "font_class": "207yonghu_yonghunv",
-      "unicode": "e63e",
-      "unicode_decimal": 58942
+      "unicode": "e63f",
+      "unicode_decimal": 58943
     },
     {
       "icon_id": "1727563",
@@ -240,8 +247,15 @@
       "icon_id": "8931860",
       "name": "系统设置",
       "font_class": "xitongshezhi",
-      "unicode": "e63f",
-      "unicode_decimal": 58943
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "9748113",
+      "name": "返回顶部",
+      "font_class": "fanhuidingbu",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
     },
     {
       "icon_id": "9785618",

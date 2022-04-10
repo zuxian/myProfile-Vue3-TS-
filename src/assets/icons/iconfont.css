@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1648739654489') format('truetype');
+  src: url('iconfont.ttf?t=1649566685295') format('truetype');
 }
 
 .iconfont {
@@ -51,8 +51,12 @@
   content: "\e60a";
 }
 
-.icon-207yonghu_yonghunv:before {
+.icon-chakan:before {
   content: "\e63e";
+}
+
+.icon-207yonghu_yonghunv:before {
+  content: "\e63f";
 }
 
 .icon-quanping:before {
@@ -144,7 +148,11 @@
 }
 
 .icon-xitongshezhi:before {
-  content: "\e63f";
+  content: "\e640";
+}
+
+.icon-fanhuidingbu:before {
+  content: "\e64a";
 }
 
 .icon-github:before {

@@ -1,7 +1,7 @@
 <template>
   <div style="position: relative;">
     <div class="proj-img-wrap">
-      <img src="../../../../assets/images/fzx-proflie.jpg" class="proj-img" />
+      <img src="../../../../assets/images/fuzuxian/fzx-proflie-1.jpg" class="proj-img" />
     </div>
     <div class="proj-header">
       工作项目
