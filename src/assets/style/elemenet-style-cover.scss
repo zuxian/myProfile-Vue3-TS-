@@ -1,5 +1,5 @@
 
-.el-button{
+.el-button--default, .el-button{
     background-color: $btn-background-color;
     border-color: $imp-text-color;
     color: $imp-text-color;
@@ -54,6 +54,24 @@
     background-color: $btn-background-color;
   }
 
+}
+
+.el-drawer {
+  background-color: $btn-background-color;
+  color: $white-text-color;
+  font-size: 14px;
+}
+
+.el-drawer__header {
+    margin-bottom: 0;
+}
+.el-drawer__body {
+    padding-top: 0px;
+}
+
+
+.el-divider--horizontal{
+    margin: 15px 0px;
 }
 
 

@@ -57,35 +57,21 @@ function initechartInstance() {
             categories: [
                 {
                     name: '朋友',
-                    itemStyle: {
-                        normal: {
-                            color: '#87CEFF',
-                        },
-                    },
+                    itemStyle: { normal: { color: '#87CEFF', },  },
                 },
                 {
                     name: '战友',
-                    itemStyle: {
-                        normal: {
-                            color: "#E6E6FA",
-                        },
-                    },
+                    itemStyle: { normal: { color: "#E6E6FA",  },  },
                 },
                 {
                     name: '亲戚',
-                    itemStyle: {
-                        normal: {
-                            color: '#FFB6C1',
-                        },
-                    },
+                    itemStyle: { normal: {  color: '#FFB6C1', }, },
                 },
             ],
             label: {
                 normal: {
                     show: true,
-                    textStyle: {
-                        fontSize: 12,
-                    },
+                    textStyle: { fontSize: 12, },
                 },
             },
             force: {
@@ -101,18 +87,18 @@ function initechartInstance() {
             },
             data: [
                 { name: '付祖贤', draggable: true, },
-                { name: '冯可梁', category: 1, draggable: true, },
-                { name: '邓志荣', category: 1, draggable: true, },
-                { name: '李荣庆', category: 1, draggable: true, },
-                { name: '郑志勇', category: 1, draggable: true, },
-                { name: '赵英杰', category: 1, draggable: true, },
-                { name: '王承军', category: 1, draggable: true, },
-                { name: '陈卫东', category: 1, draggable: true, },
-                { name: '邹劲松', category: 1, draggable: true, },
-                { name: '赵成', category: 1, draggable: true, },
-                { name: '陈现忠', category: 1, draggable: true, },
-                { name: '陶泳', category: 1, draggable: true, },
-                { name: '王德福', category: 1, draggable: true, },
+                { name: 'AAA', category: 1, draggable: true, },
+                { name: 'BBB', category: 1, draggable: true, },
+                { name: 'CCC', category: 1, draggable: true, },
+                { name: 'DDD', category: 1, draggable: true, },
+                { name: 'EEE', category: 1, draggable: true, },
+                { name: 'FFF', category: 1, draggable: true, },
+                { name: 'GGG', category: 1, draggable: true, },
+                { name: 'HHH', category: 1, draggable: true, },
+                { name: 'III', category: 1, draggable: true, },
+                { name: 'JJJ', category: 1, draggable: true, },
+                { name: 'KKK', category: 1, draggable: true, },
+                { name: 'LLL', category: 1, draggable: true, },
             ],
             links: [
                 { source: 0, target: 1, category: 0, value: '朋友', },

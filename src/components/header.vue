@@ -18,9 +18,9 @@
       </div>
       <div :class="['header-brand', 'header-mode']">
         <span class="iconfont icon-lkingboyewanyueliang"></span>
-        <span class="iconfont icon-zhongyingwen"></span>
-        <span class="iconfont icon-shuiyin"></span>
+        <span class="iconfont icon-zhongyingwen"></span>   
         <Screenfull />
+        <WaterFall />
         <span  @click="handleClick('life')">
           <el-button round> resume </el-button>
         </span>
@@ -32,6 +32,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import Screenfull from "./screenfull/index.vue"
+import WaterFall from "./WaterFall/index.vue"
 
 let isScollTop = ref(false)
 let activeName = ref('home')
